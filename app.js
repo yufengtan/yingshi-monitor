@@ -2,6 +2,7 @@ const { app } = require('./server')
 const express = require('express')
 const path = require('path')
 const compression = require('compression')
+const webeng = require('webeng')
 
 const {
     AccessToken,
@@ -10,6 +11,7 @@ const {
     monitor
 } = require('./monitor')
 
+app.use(webeng.mw.deliver)
 app.use(compression())
 app.use(express.static(path.join(__dirname, 'www/dist'), {
     maxAge: 86400000

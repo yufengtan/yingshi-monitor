@@ -58,6 +58,16 @@ export default class extends PureComponent {
             margin-left: -1rem;
             margin-top: -.5rem;
         }
+        .monitor-control{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            /* background-color: rgba(0,0,0,.65); */
+            z-index: 1e5;
+            cursor: pointer;
+        }
     `
     componentDidMount() {
         this.play()
@@ -97,7 +107,7 @@ export default class extends PureComponent {
                     },
                     handleSuccess: () => {
                         this.screenshot.style.display = 'none'
-                        return
+                        // return
                         let target = this.crt
                         target && (() => {
                             let position = [0, 0]
@@ -161,8 +171,8 @@ export default class extends PureComponent {
                                     // 开始控制
                                     StartControll({
                                         accessToken,
-                                        deviceSerial: this.list[0].deviceSerial,
-                                        channelNo: 1,
+                                        deviceSerial,
+                                        channelNo,
                                         direction,
                                         speed: 1
                                     }).then(res => res.data).then(data => {
@@ -175,8 +185,8 @@ export default class extends PureComponent {
                                             // 停止控制
                                             StopControll({
                                                 accessToken,
-                                                deviceSerial: this.list[0].deviceSerial,
-                                                channelNo: 1,
+                                                deviceSerial,
+                                                channelNo,
                                                 direction,
                                             }).then(res => res.data).then(data => {
                                                 console.log('停止控制反馈 : ', data)
@@ -212,8 +222,8 @@ export default class extends PureComponent {
                                     // 开始控制
                                     StartControll({
                                         accessToken,
-                                        deviceSerial: this.list[0].deviceSerial,
-                                        channelNo: 1,
+                                        deviceSerial,
+                                        channelNo,
                                         direction,
                                         speed: 1
                                     }).then(res => res.data).then(data => {
@@ -226,8 +236,8 @@ export default class extends PureComponent {
                                             // 停止控制
                                             StopControll({
                                                 accessToken,
-                                                deviceSerial: this.list[0].deviceSerial,
-                                                channelNo: 1,
+                                                deviceSerial,
+                                                channelNo,
                                                 direction,
                                             }).then(res => res.data).then(data => {
                                                 console.log('停止控制反馈 : ', data)
@@ -271,6 +281,10 @@ export default class extends PureComponent {
                 <img src={picUrl} alt={channelName} />
                 <Spin size='large' tip='Loading ···' />
             </div>
+            <div
+                ref={crt => this.crt = crt}
+                className="monitor-control"
+            ></div>
         </Wrapper>
     }
 }
