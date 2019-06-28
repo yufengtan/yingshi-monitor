@@ -1,0 +1,55 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  font-size: 112.5px;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 0.16rem;
+}
+
+
+/* login-area */
+.login-area::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 100%;
+    top: 0;
+    background-image: url("/images/loginArea.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-color: rgba(0,0,20,.7);
+}
+.login-area::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: rgba(77, 193, 222, 0.61);
+    height: 80%;
+    left: 0;
+    top: 10%;
+}
+
+/* login-wrapper */
+.login-wrapper{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("/images/loginBackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
