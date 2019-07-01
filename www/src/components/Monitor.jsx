@@ -101,8 +101,9 @@ export default class extends PureComponent {
                     decoderPath: '',
                     width: this.video.offsetWidth,
                     height: this.video.offsetHeight,
-                    handleError: () => {
-                        message.error('监控视频初始化失败！')
+                    handleError: (e) => {
+                        message.error(/* '监控视频初始化失败！' */ e.msg)
+                        console.log('捕获到异常 : ', e)
                         this.screenshot.style.display = 'none'
                     },
                     handleSuccess: () => {
