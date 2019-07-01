@@ -105,6 +105,10 @@ export default class extends PureComponent {
                         message.error(/* '监控视频初始化失败！' */ e.msg)
                         console.log('捕获到异常 : ', e)
                         this.screenshot.style.display = 'none'
+                        this.crt.onmousedown = () => { }
+                        this.crt.onmouseup = () => { }
+                        this.crt.onmousemove = () => { }
+                        this.crt.onwheel = () => { }
                     },
                     handleSuccess: () => {
                         this.screenshot.style.display = 'none'

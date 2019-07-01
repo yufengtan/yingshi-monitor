@@ -32,6 +32,7 @@ class extends PureComponent {
         }
         .menu{
             width: 3rem;
+            background-color: #001529;
         }
         .view{
             position: absolute;

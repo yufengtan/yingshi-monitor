@@ -33,7 +33,7 @@ body-parser@1.19.0:
 
 bytes@3.0.0:
   version "3.0.0"
-  resolved "https://registry.npm.taobao.org/bytes/download/bytes-3.0.0.tgz#d32815404d689699f85a4ea4fa8755dd13a96048"
+  resolved "https://registry.npmjs.org/bytes/-/bytes-3.0.0.tgz#d32815404d689699f85a4ea4fa8755dd13a96048"
   integrity sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg=
 
 bytes@3.1.0:
@@ -43,15 +43,15 @@ bytes@3.1.0:
 
 compressible@~2.0.16:
   version "2.0.17"
-  resolved "https://registry.npm.taobao.org/compressible/download/compressible-2.0.17.tgz#6e8c108a16ad58384a977f3a482ca20bff2f38c1"
-  integrity sha1-bowQihatWDhKl386SCyiC/8vOME=
+  resolved "https://registry.npmjs.org/compressible/-/compressible-2.0.17.tgz#6e8c108a16ad58384a977f3a482ca20bff2f38c1"
+  integrity sha512-BGHeLCK1GV7j1bSmQQAi26X+GgWcTjLr/0tzSvMCl3LH1w1IJ4PFSPoV5316b30cneTziC+B1a+3OjoSUcQYmw==
   dependencies:
     mime-db ">= 1.40.0 < 2"
 
 compression@^1.7.4:
   version "1.7.4"
-  resolved "https://registry.npm.taobao.org/compression/download/compression-1.7.4.tgz#95523eff170ca57c29a0ca41e6fe131f41e5bb8f"
-  integrity sha1-lVI+/xcMpXwpoMpB5v4TH0Hlu48=
+  resolved "https://registry.npmjs.org/compression/-/compression-1.7.4.tgz#95523eff170ca57c29a0ca41e6fe131f41e5bb8f"
+  integrity sha512-jaSIDzP9pZVS4ZfQ+TzvtiWhdpFhE2RDHz8QJkpX9SIpLq88VueF5jJw6t+6CUQcAoA6t+x89MLrWAqpfDE8iQ==
   dependencies:
     accepts "~1.3.5"
     bytes "3.0.0"
@@ -332,8 +332,8 @@ on-finished@~2.3.0:
 
 on-headers@~1.0.2:
   version "1.0.2"
-  resolved "https://registry.npm.taobao.org/on-headers/download/on-headers-1.0.2.tgz#772b0ae6aaa525c399e489adfad90c403eb3c28f"
-  integrity sha1-dysK5qqlJcOZ5Imt+tkMQD6zwo8=
+  resolved "https://registry.npmjs.org/on-headers/-/on-headers-1.0.2.tgz#772b0ae6aaa525c399e489adfad90c403eb3c28f"
+  integrity sha512-pZAE+FJLoyITytdqK0U5s+FIpjN0JP3OzFi/u8Rx+EV5/W+JTWGXG8xFzevE7AjBfDqHv/8vL8qQsIhHnqRkrA==
 
 parseurl@~1.3.3:
   version "1.3.3"
@@ -455,7 +455,7 @@ vary@~1.1.2:
   resolved "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
-webeng@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/webeng/-/webeng-1.0.2.tgz#d4df1519c62cfb93bca735d3298067a026f728e7"
-  integrity sha1-1N8VGcYs+5O8pzXTKYBnoCb3KOc=
+webeng@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/webeng/-/webeng-1.0.3.tgz#6e492d66dc3ab75ff8795e04b3e00ff6ce7b003c"
+  integrity sha512-H8ZCqwgHliTOjkDDxeYcHAIGinnldIY8KWS9jwKuA8M62LwjI8cJMmiQDqgBSECKTw9A3RdJ+1udN6P0fZlYfg==

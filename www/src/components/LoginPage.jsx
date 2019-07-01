@@ -63,7 +63,7 @@ const LoginPage = Form.create()(class extends PureComponent {
                 marginBottom: 56,
             }}>
                 {/* <Avatar size={64} src='/images/logo.png' /> */}
-                <p>萤石监控视频接入平台</p>
+                <p>现场监控视频接入平台</p>
             </FormItem>
             <FormItem>
                 {getFieldDecorator('username', {
